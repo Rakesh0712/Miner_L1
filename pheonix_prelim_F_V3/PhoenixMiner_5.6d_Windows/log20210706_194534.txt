@@ -1,0 +1,72 @@
+2021.07.06:19:45:34.535: main Phoenix Miner 5.6d Windows/msvc - Release build
+2021.07.06:19:45:34.535: main Cmd line: -pool ssl://eu1.ethermine.org:5555 -pool2 ssl://asia1.ethermine.org:5555 -wal 0xCCD17E09B7057330aA8dA37cAF75BeFCC789B970.Rig001 -mclock -1500 -cclock -670 
+2021.07.06:19:45:34.569: main CUDA version: 11.0, CUDA runtime: 8.0
+2021.07.06:19:45:35.018: main OpenCL driver version: 20.5.1
+2021.07.06:19:45:35.024: main Available GPUs for mining:
+2021.07.06:19:45:35.024: main GPU1: GeForce RTX 2060 with Max-Q Design (pcie 1), CUDA cap. 7.5, 6 GB VRAM, 30 CUs
+2021.07.06:19:45:35.024: main GPU2: AMD Radeon(TM) Graphics (pcie 4), OpenCL 2.0, 6.1 GB VRAM, 8 CUs
+2021.07.06:19:45:35.024: main ADL library initialized
+2021.07.06:19:45:35.028: main NVML library initialized
+2021.07.06:19:45:35.038: main Nvidia driver version: 461.40
+2021.07.06:19:45:35.641: main Eth: the pool list contains 2 pools (2 from command-line)
+2021.07.06:19:45:35.641: main Eth: primary pool: ssl://eu1.ethermine.org:5555
+2021.07.06:19:45:35.641: main Starting GPU mining
+2021.07.06:19:45:35.641: main Matched GPU2 to ADL adapter index 0 (method 1)
+2021.07.06:19:45:35.641: main ADL Overdrive not supported on GPU2
+2021.07.06:19:45:35.641: main ADL adapter index not found for GPU2
+2021.07.06:19:45:35.641: main GPU2: using AMD driver ver 20.10.20
+2021.07.06:19:45:35.645: hwmc GPU1: unable to get fan speed - Not Supported (3)
+2021.07.06:19:45:35.897: hwmc GPU1: set GPU clock delta to -670 MHz
+2021.07.06:19:45:36.027: hwmc GPU1: set memory clock delta to -1000 MHz
+2021.07.06:19:45:36.086: wdog Starting watchdog thread
+2021.07.06:19:45:36.776: main Eth: Connecting to ethash pool ssl://eu1.ethermine.org:5555 (proto: EthProxy)
+2021.07.06:19:45:36.777: main GPU1: 52C 6W, GPU2: N/A
+GPUs power: 5.5 W
+2021.07.06:19:45:36.829: eths Eth: Connected to SSL ethash pool eu1.ethermine.org:5555 (2606:4700:90:0:bda0:4092:8f4f:4658)
+2021.07.06:19:45:36.932: eths Eth: Send: {"id":1,"jsonrpc":"2.0","method":"eth_submitLogin","worker":"eth1.0","params":["0xCCD17E09B7057330aA8dA37cAF75BeFCC789B970.Rig001"]}
+
+2021.07.06:19:45:36.987: main Listening for CDM remote manager at port 3333 in read-only mode
+2021.07.06:19:45:37.009: eths Eth: Received: {"id":1,"jsonrpc":"2.0","result":true}
+2021.07.06:19:45:37.009: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","params":[]}
+
+2021.07.06:19:45:37.057: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x3050b711ddef74e57f3518e3927ddf435724693849667e85fc8e2230ce11d78d","0xa832d784408bd1abd7e77cd91c5ef058b0eff2646b66cd6117c71be848704f7f","0x00000000ffff00000000ffff00000000ffff00000000ffff00000000ffff0000","0xc2f098"]}
+2021.07.06:19:45:37.057: eths Eth: New job #3050b711 from ssl://eu1.ethermine.org:5555; diff: 4295MH
+2021.07.06:19:45:37.058: GPU1 GPU1: Starting up... (0)
+2021.07.06:19:45:37.058: GPU1 GPU1: Generating ethash light cache for epoch #425
+2021.07.06:19:45:37.065: GPU2 GPU2: Starting up... (0)
+2021.07.06:19:45:39.456: GPU1 Light cache generated in 2.4 s (28.8 MB/s)
+2021.07.06:19:45:40.238: GPU2 GPU2: Free VRAM: 6.028 GB; used: 0.066 GB
+2021.07.06:19:45:40.238: GPU2 GPU2: Allocating DAG (4.34) GB; good for epoch up to #427
+2021.07.06:19:45:40.250: GPU2 GPU2: Generating DAG for epoch #425
+2021.07.06:19:45:41.288: GPU1 GPU1: Allocating DAG (4.34) GB; good for epoch up to #427
+2021.07.06:19:45:41.487: GPU1 GPU1: Generating DAG for epoch #425
+2021.07.06:19:45:41.920: main Eth speed: 0.000 MH/s, shares: 0/0/0, time: 0:00
+2021.07.06:19:45:41.920: main GPUs: 1: 0.000 MH/s (0) 2: 0.000 MH/s (0)
+2021.07.06:19:45:42.258: GPU2 GPU2: DAG   3%
+2021.07.06:19:45:42.548: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x3359cf9a81fd8a1e8dc7d9d15f9d074f42d6676210a88e28b44af821328a861f","0xa832d784408bd1abd7e77cd91c5ef058b0eff2646b66cd6117c71be848704f7f","0x00000000ffff00000000ffff00000000ffff00000000ffff00000000ffff0000","0xc2f099"]}
+2021.07.06:19:45:42.548: eths Eth: New job #3359cf9a from ssl://eu1.ethermine.org:5555; diff: 4295MH
+2021.07.06:19:45:42.675: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x77f0929d664305874cff95d2c26bb049246d1862f92544a6cebed48a54042535","0xa832d784408bd1abd7e77cd91c5ef058b0eff2646b66cd6117c71be848704f7f","0x00000000ffff00000000ffff00000000ffff00000000ffff00000000ffff0000","0xc2f099"]}
+2021.07.06:19:45:42.675: eths Eth: New job #77f0929d from ssl://eu1.ethermine.org:5555; diff: 4295MH
+2021.07.06:19:45:43.205: GPU1 GPU1: DAG   8%
+2021.07.06:19:45:43.577: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0xbf0b1a8b3a24021fccda3bf8c83d8d931bbc721fed107a5cac6f867f3c3a94d2","0xa832d784408bd1abd7e77cd91c5ef058b0eff2646b66cd6117c71be848704f7f","0x00000000ffff00000000ffff00000000ffff00000000ffff00000000ffff0000","0xc2f099"]}
+2021.07.06:19:45:43.577: eths Eth: New job #bf0b1a8b from ssl://eu1.ethermine.org:5555; diff: 4295MH
+2021.07.06:19:45:43.786: GPU2 GPU2: DAG   5%
+2021.07.06:19:45:44.884: GPU1 GPU1: DAG  17%
+2021.07.06:19:45:45.304: GPU2 GPU2: DAG   8%
+2021.07.06:19:45:46.565: GPU1 GPU1: DAG  27%
+2021.07.06:19:45:46.812: GPU2 GPU2: DAG  10%
+2021.07.06:19:45:46.946: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","params":[]}
+
+2021.07.06:19:45:46.992: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0xbf0b1a8b3a24021fccda3bf8c83d8d931bbc721fed107a5cac6f867f3c3a94d2","0xa832d784408bd1abd7e77cd91c5ef058b0eff2646b66cd6117c71be848704f7f","0x00000000ffff00000000ffff00000000ffff00000000ffff00000000ffff0000","0xc2f099"]}
+2021.07.06:19:45:47.056: main Eth speed: 0.000 MH/s, shares: 0/0/0, time: 0:00
+2021.07.06:19:45:47.056: main GPUs: 1: 0.000 MH/s (0) 2: 0.000 MH/s (0)
+2021.07.06:19:45:48.245: GPU1 GPU1: DAG  36%
+2021.07.06:19:45:48.328: GPU2 GPU2: DAG  13%
+2021.07.06:19:45:49.859: GPU2 GPU2: DAG  16%
+2021.07.06:19:45:49.923: GPU1 GPU1: DAG  45%
+2021.07.06:19:45:51.060: unkn Quitting...
+2021.07.06:19:45:51.119: GPU1 GPU1 initMiner error: Unable to initialize CUDA miner
+2021.07.06:19:45:51.336: hwmc GPU1: reset GPU clock delta to 0 MHz
+2021.07.06:19:45:51.493: hwmc GPU1: reset memory clock delta to 0 MHz
+2021.07.06:19:45:51.539: wdog Stopping watchdog thread
+2021.07.06:19:45:51.556: main Exit code: 0
